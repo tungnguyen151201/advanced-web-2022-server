@@ -5,7 +5,7 @@
  */
 
 const app = require('./app');
-const port = 3001;
+const port = 5002;
 const http = require('http');
 var https = require('https');
 
