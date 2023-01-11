@@ -9,10 +9,10 @@ const port = 5002;
 const http = require('http');
 var https = require('https');
 
-const server = http.createServer(app);
+// const server = http.createServer(app);
 const httpsServer = https.createServer(app);
 
-server.listen(8080);
+// server.listen(8080);
 httpsServer.listen(port);
 // server.on('error', onError);
 // server.on('listening', onListening);
