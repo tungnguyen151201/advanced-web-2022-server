@@ -5,6 +5,7 @@
  */
 
 const app = require('../app');
+const port = 3001;
 const http = require('http');
 
 const server = http.createServer(app);
