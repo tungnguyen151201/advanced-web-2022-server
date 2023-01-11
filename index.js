@@ -15,7 +15,7 @@ const httpsServer = https.createServer(app);
 // server.listen(8080);
 httpsServer.listen(port);
 // server.on('error', onError);
-server.on('listening', onListening);
+httpsServer.on('listening', onListening);
 
 // function onError(error) {
 //   if (error.syscall !== 'listen') {
@@ -44,6 +44,6 @@ server.on('listening', onListening);
 //  */
 
 function onListening() {
-  const addr = server.address();
+  const addr = httpsServer.address();
   console.log('Listening on localhost:' + addr.port);
 }
