@@ -5,14 +5,11 @@
  */
 
 const app = require('./app');
-const port = 443;
-const http = require('http');
+const port = process.env.port;
 var https = require('https');
 
-// const server = http.createServer(app);
 const httpsServer = https.createServer(app);
 
-// server.listen(8080);
 httpsServer.listen(port);
 // server.on('error', onError);
 httpsServer.on('listening', onListening);
